@@ -1,0 +1,367 @@
+
+@media (max-width: 1380px) {
+#home{
+    padding-top: 100px;
+}
+}
+@media (max-width: 1280px) {
+    .nav {
+        width: 230px;
+    }
+    #home{
+        min-height: 700px;
+        padding-top: 0;
+        justify-content: flex-start;
+    }
+    /** skills sections styling*/
+    /** about styling*/
+    .ab-name p:first-child{
+        font-size: 2rem;
+    }
+    .ab-desc{
+        font-size: 1.25rem;
+    }
+    .about-ab:hover .ab-title,
+.ab-title:hover{
+    font-size: 2rem;
+}
+}
+@media (max-width: 1200px) {
+
+    /** Home section styling*/
+    #home {
+        min-height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .home-text {
+        width: 90%;
+        height: auto;
+        gap: 50px;
+
+    }
+
+    #text-big {
+        font-family: Tektur;
+        font-size: 2rem;
+
+    }
+
+    #name {
+        font-size: 2.5rem;
+    }
+
+    #name:hover {
+        font-size: 3rem;
+    }
+
+    .home-btns {
+        width: 80%;
+    }
+/** skills styling*/
+
+
+
+
+}
+
+@media (max-width:992px) {
+
+    /** Home section styling*/
+#home{
+    min-height: 550px;
+}
+    .home-text {
+        justify-content: space-around;
+        width: 90%;
+        height: 400px;
+        gap: 80px;
+        font-size: 1.5rem;
+
+    }
+
+    .text {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #text-big {
+        font-size: 1.75rem;
+
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #name:hover {
+        font-size: 2.5rem;
+    }
+
+    .home-btns {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .home-btns .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #btn1:hover {
+        font-size: 1.5rem;
+        transform: scale(1.25);
+    }
+
+
+    #btn2:hover {
+
+        transform: scale(1.25);
+        font-size: 1.5rem;
+    }
+    /** skills styling*/
+    
+.skills-container {
+    height: auto;
+    min-height: 1300px;
+    grid-template-columns: 1fr 1fr ;
+   grid-template-rows: repeat(3, 400px);
+    gap: 5%;
+}
+
+}
+
+@media (max-width: 768px) {
+    .nav {
+        min-height: 30px;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-list {
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-list li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /** Home section styling*/
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .home-text {
+        width: 90%;
+        height: 350px;
+        gap: 80px;
+        font-size: 1rem;
+
+    }
+
+    #text-big {
+        font-size: 1.5rem;
+
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+    #name:hover {
+        font-size: 2.5rem;
+    }
+
+    .home-btns {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .home-btns .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 200px;
+        font-size: 1.5rem;
+    }
+
+    #btn1:hover {
+        font-size: 1.5rem;
+        transform: scale(1.25);
+    }
+
+
+    #btn2:hover {
+
+        transform: scale(1.25);
+        font-size: 1.5rem;
+    }
+    /** about styling*/
+    #about{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+
+    #home {
+        min-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /** Home section styling*/
+    
+
+    .home-text {
+        width: 90%;
+        gap: 50px;
+
+    }
+    #text-big {
+        font-size: 1.25rem;
+
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    #name:hover {
+        font-size: 2rem;
+    }
+
+    .home-btns {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .home-btns .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 150px;
+        font-size: 1rem;
+    }
+
+    #btn1:hover {
+        font-size: 1.25rem;
+        transform: scale(1.25);
+    }
+
+
+    #btn2:hover {
+        transform: scale(1.25);
+        font-size: 1rem;
+    }
+    /** Skills styling   */
+    
+.skills-container {
+    min-height: 2400px;
+    height: auto;
+    padding-bottom: 5%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 90%) ;
+    grid-template-rows: repeat(6, 400px);
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 0;
+}
+/**about styling*/
+
+
+
+.about-title p{
+    font-size: 2rem;
+    font-weight: bold;
+    color:  var(--txt-light);
+}
+.about-title p:hover{
+    font-size: 2.5rem;
+}
+.about-container{
+    padding: 0;
+    width: 100%;
+    min-height: 600px;
+    
+}
+.about-ab{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    padding:0px 15px;
+    min-height: 300px;
+    max-height: 400px;
+    height: auto;
+    background:  var(--dark-blue);
+    border-radius: 0px 30px;
+
+}
+.ab-title{
+    font-family: Tektur;
+    font-size: 2rem;
+    font-weight: bold;
+    color:  var(--light);
+}
+.about-ab:hover .ab-title,
+.ab-title:hover{
+    font-size: 2.25rem;
+}
+.ab-name{
+
+    position: relative;
+}
+
+.ab-name p:first-child{
+font-size: 1.5rem;
+font: bold;
+color: var(--txt-light);
+}
+.ab-name p:nth-child(2){
+    font-size: 1.5rem;
+    font: bold;
+    color: var(--light);
+}
+
+
+.ab-desc{
+    font-size: 1.25rem;
+    font: bold;
+    color: var(--txt-light);
+}
+
+}

@@ -1,0 +1,457 @@
+* {
+    font-family: "Kanit", sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+:root {
+    --black: #071125;
+    --navyBlue: #0C2144;
+    --royalBlue: #16488F;
+    --darkBlue: #0B1F65;
+    --txt-light: #ffffff;
+    --txt-dark: #000000;
+    --light: #75adf5;
+    --green: #21D375;
+    --dark-green: #08A045;
+    --dark-blue: #1C2D8C;
+}
+
+/** nav bar */
+body {
+    background: var(--navyBlue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 265px;
+}
+
+.nav {
+    min-height: 100vh;
+    margin-top: 0;
+    position: fixed;
+    background: var(--black);
+    height: 650px;
+    width: 265px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-logo {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo .nav-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+    background: wheat;
+}
+
+.nav-list {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list a {
+    color: var(--txt-light);
+    text-decoration: none;
+}
+
+.nav-list li {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-list li:hover a,
+.nav-list li a:hover {
+    color: var(--light);
+}
+
+.nav-list li.active a {
+    color: var(--light);
+
+}
+
+/** Home styling */
+#home {
+    padding-top: 200px;
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-text {
+    color: var(--txt-light);
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+.home-desc{
+    color:var(--light)
+}
+#text-big {
+    font-family: Tektur;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#name {
+    font-family: Tektur;
+    color: var(--light);
+    font-weight: 900;
+    font-size: 4rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#name:hover {
+    font-size: 5rem;
+}
+
+.home-btns {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-btns .btn {
+    border: none;
+    border-radius: 30px;
+    height: 70px;
+    width: 250px;
+    font-size: 1.75rem;
+    padding: 10px 20px;
+    transition: all 0.75s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#btn1 {
+    background: var(--green);
+}
+
+#btn2 {
+    background: var(--light);
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn a,
+.fa-solid {
+    color: var(--txt-light);
+    cursor: pointer;
+}
+
+#btn1:hover {
+    background: var(--dark-green);
+    border: 2px solid var(--txt-light);
+    font-size: 1.75rem;
+    transform: scale(1.25);
+}
+
+
+#btn2:hover {
+    border: 2px solid var(--txt-light);
+    transform: scale(1.25);
+    font-size: 1.75rem;
+    background: var(--dark-blue);
+
+}
+/************************************************************************************/
+/** skills sections styling*/
+#skills {
+    min-height: 700px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content {
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    margin: 70px auto;
+}
+
+.skills-title span{
+    position: relative;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--light);
+    margin-bottom: 20px;
+
+}
+
+.skills-title span::after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    background: var(--txt-light);
+    border-radius: 3px;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-title:hover span::after {
+    width: 100px;
+}
+
+.skills-container {
+    min-height: 1000px;
+    height: auto;
+    padding-bottom: 5%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 5%;
+}
+
+.skills-card {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+
+}
+
+.skill-pic {
+    width: 100%;
+    height: 50%;
+    border-radius: 25px;
+    background: wheat;
+    overflow: hidden;
+}
+.card-text{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skill-name {
+    color: var(--txt-light);
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    font-size: 2rem;
+    position: relative;
+    
+    }
+    
+    .skill-desc {
+        text-align: justify;
+        color: var(--light);
+        font-size: 1rem;
+        }
+        
+   
+.skill-name::after {
+    content: ' ';
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.skills-card:hover {
+    box-shadow: 0 0 10px 0 var(--light);
+    transform: scale(1.125);
+}
+
+.skills-card:hover .skill-name::after {
+    width: 100%;
+}
+
+/**skilss images*/
+#p1{
+    background: url("images/HTML.jpg");
+}
+#p2{
+    background: url("images/CSS.png");
+}
+#p3{
+    background: url("images/JS.png");
+}
+#p4{
+    background: url("images/C++.jpg");
+}
+#p5{
+    background: url("images/SQL.jpg");
+}
+#p6{
+    background: url("images/JAVA.png");
+}
+#p1, #p2, #p3, #p4, #p5, #p6{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/**************************************************************/
+
+/** about styling*/
+#about{
+    width: 90%;
+    min-height: 900px;
+    height: auto;
+    padding-top: 100px;
+}
+.about-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+    flex-direction: column;
+}
+.about-title span{
+    position: relative;
+    font-size: 2rem;
+    display: inline-block;
+    color: var(--light);
+    margin-bottom: 20px;
+
+}
+
+.about-title span::after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    background: var(--txt-light);
+    border-radius: 3px;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-title:hover span::after {
+    width: 100px;
+}
+
+.about-title p{
+    font-size: 3rem;
+    font-weight: bold;
+    color:  var(--txt-light);
+}
+.about-title p:hover{
+    font-size: 4rem;
+}
+.about-container{
+    padding: 100px 0px;
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items:center ;
+    
+}
+.about-ab{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    padding:0px 15px;
+    min-height: 300px;
+    max-height: 400px;
+    height: auto;
+    background:  var(--dark-blue);
+    border-radius: 0px 30px;
+
+}
+.ab-title{
+    font-family: Tektur;
+    font-size: 2rem;
+    font-weight: bold;
+    color:  var(--light);
+}
+.about-ab:hover .ab-title,
+.ab-title:hover{
+    font-size: 3rem;
+}
+.ab-name{
+
+    position: relative;
+}
+
+.ab-name p:first-child{
+font-size: 3rem;
+font: bold;
+color: var(--txt-light);
+}
+.ab-name p:nth-child(2){
+    font-size: 2rem;
+    font: bold;
+    color: var(--light);
+}
+.ab-name p:nth-child(2)::after{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: 0%;
+    height: 3px;
+    background: var(--txt-light);
+    border-radius: 3px;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+.about-ab:hover p:nth-child(2)::after{
+    width: 100%;
+}
+.about-ab:hover{
+    transform: scale(1.125);
+    box-shadow: 0px 0px 30px var(--light);
+}
+.ab-desc{
+    font-size: 1.5rem;
+    font: bold;
+    color: var(--txt-light);
+}
