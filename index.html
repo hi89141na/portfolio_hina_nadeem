@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Tektur:wght@400..900&display=swap"
         rel="stylesheet">
     <!--font -->
-
+    <!--!Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap"
         rel="stylesheet">
@@ -178,7 +179,9 @@
                         <p>Superior University Lahore</p>
                     </div>
                     <div class="ab-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam culpa, assumenda tempore consequuntur quis iusto repellat repellendus delectus nihil qui dolor commodi harum quasi sapiente dolorem nulla veniam doloremque eos.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam culpa, assumenda tempore
+                        consequuntur quis iusto repellat repellendus delectus nihil qui dolor commodi harum quasi
+                        sapiente dolorem nulla veniam doloremque eos.
                     </div>
                 </div>
                 <div class="about-ab">
@@ -190,26 +193,107 @@
                         <p>ProgrammerTech</p>
                     </div>
                     <div class="ab-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae unde iure fugit aspernatur aliquid! Dolore cum possimus autem, nam temporibus dolorum ipsa impedit deleniti provident quo consequatur voluptas eos!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo repudiandae unde iure fugit
+                        aspernatur aliquid! Dolore cum possimus autem, nam temporibus dolorum ipsa impedit deleniti
+                        provident quo consequatur voluptas eos!
                     </div>
                 </div>
             </div>
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            
         </section>
+        <section id="projects">
+            <div class="skills-title">
+                <span>My Projects</span>
+            </div>
+            <div class="projects-container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper" >
+                        <div class="card-item swiper-slide">
+                            <div id="i1" class="project-img"></div>
+                            <h2 class="project-name">Netflix Clone</h2>
+                            <p class="project-msg">HTML & CSS</p>
+                            <button class="pr-btn"><a href="https://github.com/hi89141na/Netflix-Clone"
+                                    title="netflix clone">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i2" class="project-img"></div>
+                            <h2 class="project-name">Mini Calculator</h2>
+                            <p class="project-msg">HTML, CSS & JS</p>
+                            <button class="pr-btn"><a href="https://github.com/hi89141na/Mini-Calculator-"
+                                    title="mini calculator ">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i3" class="project-img"></div>
+                            <h2 class="project-name">To-Do List</h2>
+                            <p class="project-msg">HTML, CSS & JS</p>
+                            <button class="pr-btn"><a href="https://github.com/hi89141na/Todo-List-usinh-HTML-CSS-JS"
+                                    title="To-Do List">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i4" class="project-img"></div>
+                            <h2 class="project-name"> Tic-Tac-Toe Game</h2>
+                            <p class="project-msg">HTML, CSS & JS</p>
+                            <button class="pr-btn"><a href="https://github.com/hi89141na/tic-tac-toe-game"
+                                    title="Tic-Tac-Toe Gam">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i5" class="project-img"></div>
+                            <h2 class="project-name">Hangman Game</h2>
+                            <p class="project-msg">C++</p>
+                            <button class="pr-btn"><a href="#" title="Hangman Game">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i6" class="project-img"></div>
+                            <h2 class="project-name">Student Portal</h2>
+                            <p class="project-msg">C++</p>
+                            <button class="pr-btn"><a href="#" title="Student Management System">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i7" class="project-img"></div>
+                            <h2 class="project-name">Quiz System</h2>
+                            <p class="project-msg">C++</p>
+                            <button class="pr-btn"><a href="#" title="Quiz System">Read More</a></button>
+                        </div>
+                        <!---->
+                        <div class="card-item swiper-slide">
+                            <div id="i8" class="project-img"></div>
+                            <h2 class="project-name">Restaurant Page</h2>
+                            <p class="project-msg">HTML & CSS</p>
+                            <button class="pr-btn"><a href="#" title="Restaurant Webpage">Read More</a></button>
+                        </div>
+                        <!---->
 
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-
-
-            <script>
-                let typed = new Typed("#name",{
-                    strings:["Front-end Developer","Programmer", "Problem-solver", "Coder" ],
-                    typeSpeed: 150,
-                    backSpeed: 150,
-                    loop  :true
-                });
-            </script>
+    <!--script for swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--custom script-->
+    <script src="script.js"></script>
+    <!--script for typewriter-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed("#name", {
+            strings: ["Front-end Developer", "Programmer", "Problem-solver", "Coder"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
