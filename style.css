@@ -499,14 +499,16 @@ main {
 /*!projects styling*/
 #projects {
     min-height: 900px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-
+#projects .skills-title{
+    align-self: flex-start;
+}
 .projects-container {
+    align-self: center;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -657,3 +659,85 @@ main {
     color: var(--light);
 }
 
+/*****************************************************************************/
+/*!todo Contact Section styling*/
+#contact {
+    min-height: 800px;
+    width: 90%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.contact-title {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--light);
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+span.contact-title::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--txt-light);
+    border-radius: 3px;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+span.contact-title:hover::after {
+    width: 130px;
+}
+
+
+#contact p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--txt-light);
+}
+
+#contact p:hover {
+    font-size: 2.5rem;
+}
+
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    background: pink;
+}
+.contact-form{
+        width: 80%;    
+        min-height:500px ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 ,1fr);
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /**
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        justify-content: center;
+        align-items: center;
+       gap: 20px;  Adjust the gap value as needed 
+        position: relative;
+        width: 100%;
+        min-height: 700px;
+        background: pink;
+        */
+
+
+
+
+}
