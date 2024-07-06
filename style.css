@@ -666,7 +666,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 span.contact-title {
@@ -762,5 +761,41 @@ width: calc(50% - 50px);
     color: var(--green);
     border: 2px solid var(--txt-light);
     padding: 8px;
+}
+
+/**************************************************/
+/**!Footer Styling */
+footer{
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+#logo1{
+    background-image: url("images/github-logo.png");
+}
+#logo2{
+    background-image: url("images/linkedin-logo.png");
+}
+#logo3{
+    background-image: url("images/gmail-logo.png");
+}
+#logo1, #logo2, #logo3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo:hover{
+    transform: scale(1.5);
+    margin:0px 10px;
 }
 
