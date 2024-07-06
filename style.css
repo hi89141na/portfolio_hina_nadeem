@@ -662,12 +662,11 @@ main {
 /*****************************************************************************/
 /*!todo Contact Section styling*/
 #contact {
-    min-height: 800px;
     width: 90%;
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 span.contact-title {
@@ -712,32 +711,56 @@ span.contact-title:hover::after {
 .contact-container {
     position: relative;
     width: 100%;
-    min-height: 700px;
-    background: pink;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .contact-form{
-        width: 80%;    
-        min-height:500px ;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4 ,1fr);
-        gap:20px;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        /**
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-        justify-content: center;
-        align-items: center;
-       gap: 20px;  Adjust the gap value as needed 
-        position: relative;
-        width: 100%;
-        min-height: 700px;
-        background: pink;
-        */
-
-
-
-
+    margin-top: 1rem;
+        width: 100%;    
+        height: auto;
+        min-height:400px ;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+    }
+.contact-form input, 
+.contact-form textarea{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: var(--txt-light);
+    height: 40px;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:none
 }
+.form-first{
+    display: flex;
+    justify-content: space-between;
+}
+#formName, #email{
+width: calc(50% - 50px);
+}
+#message{
+    height: 100px;
+}
+.contact-form button{
+    height: 60px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    background: var(--green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--txt-light);
+}
+.contact-form button:hover{
+    background: var(--txt-light);
+    color: var(--green);
+    border: 2px solid var(--txt-light);
+    padding: 8px;
+}
+
