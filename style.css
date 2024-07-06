@@ -66,7 +66,10 @@ main {
     width: 200px;
     border-radius: 50%;
     border: 10px solid white;
-    background: wheat;
+    background: url("images/hina.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 .nav-list {
@@ -183,10 +186,12 @@ main {
 }
 
 .btn a,
-.fa-solid {
+.fa-arrow-right, 
+.fa-download {
     color: var(--txt-light);
     cursor: pointer;
 }
+
 
 #btn1:hover {
     background: var(--dark-green);
